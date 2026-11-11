@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HAMSTERLIFE2</title>
+<style>
+body {
+  margin: 0;
+  background: #101827;
+  color: white;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+.container {
+  padding: 25px;
+}
+h1 {
+  color: #facc15;
+  font-size: 30px;
+}
+.coin {
+  font-size: 65px;
+  margin: 25px;
+}
+.balance {
+  font-size: 28px;
+  color: #facc15;
+}
+button {
+  background: #facc15;
+  border: none;
+  border-radius: 15px;
+  padding: 16px 35px;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 15px;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<h1>🐹 HAMSTERLIFE2</h1>
+<p>Welcome to your hamster world!</p>
+<div class="coin">🐹</div>
+<p>YOUR BALANCE</p>
+<div class="balance" id="balance">0 🪙</div>
+<button onclick="earn()">TAP TO EARN 🐹</button>
+<p>Build your hamster empire!</p>
+</div>
+<script>
+let coins = 0;
+function earn() {
+  coins++;
+  document.getElementById("balance").innerText = coins + " 🪙";
+}
+</script>
+</body>
+</html>
